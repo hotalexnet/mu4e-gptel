@@ -57,6 +57,19 @@ git clone https://github.com/hotalexnet/mu4e-gptel.git ~/code/mu4e-gptel
 也可以通过 `M-x` 执行这些命令。翻译目标默认为简体中文。使用生成内容前请先检查和修改；
 回复会保留为普通草稿，必须由用户手动发送。
 
+## 截图
+
+下面展示翻译和摘要结果缓冲区。截图已裁剪为 gptel 输出窗格，排除了发件人信息和原邮件窗格；
+翻译截图中引用行里的发件人姓名也已遮盖。
+
+**翻译结果**
+
+![mu4e-gptel 翻译结果](./assets/screenshots/translation.png)
+
+**摘要结果**
+
+![mu4e-gptel 摘要结果](./assets/screenshots/summary.png)
+
 ## 邮件范围与隐私
 
 插件会把当前邮件的主题和可读取的正文发送给 gptel 配置的服务。如果 mu4e 的消息元数据中

@@ -63,6 +63,21 @@ The commands are also available through `M-x`. Translation defaults to
 Simplified Chinese. Review and edit generated text before using it; in
 particular, a reply remains an ordinary draft and must be sent manually.
 
+## Screenshots
+
+The screenshots below show the translation and summary result buffers. They
+are cropped to the gptel output pane; the sender details and original-message
+pane are excluded, and the quoted sender attribution in the translation is
+redacted.
+
+**Translation**
+
+![mu4e-gptel translation result](./assets/screenshots/translation.png)
+
+**Summary**
+
+![mu4e-gptel summary result](./assets/screenshots/summary.png)
+
 ## Message scope and privacy
 
 For the current message, the integration sends its subject and readable text
