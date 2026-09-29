@@ -70,14 +70,18 @@ body to the provider configured in gptel. If mu4e does not expose a text body in
 the message metadata, the integration uses the rendered message view instead.
 Attachments and other messages in the thread are not deliberately included.
 
-Email content is untrusted input and is marked as such in the prompt, but this is
-not a guarantee against malicious instructions or inaccurate model output. The
-actual recipient of the request is determined by your gptel backend. Do not use
-these commands for messages that must not leave your device unless your
-configured provider is appropriate for that data.
+If gptel is configured to use a remote large-language-model API, the message
+content is sent to that API provider. Its handling, retention, and logging of
+the data are governed by the provider's policies and your account settings; do
+not send confidential messages unless that use is permitted and appropriate.
+If gptel uses a model running locally on your device, this integration does not
+send the message to a third-party model API, provided the local model endpoint
+does not relay requests to a remote service.
 
-The plugin itself does not send mail, save API keys, or change gptel's provider
-configuration.
+Email content is untrusted input and is marked as such in the prompt, but this
+does not guarantee protection against malicious instructions or inaccurate
+model output. The plugin itself does not send mail, save API keys, or change
+gptel's provider configuration.
 
 ## Tests
 
@@ -99,5 +103,4 @@ working DeepSeek key in `~/.emacs.d/init.el` and network access.
 
 ## License
 
-No license file or reuse license has been declared. Public visibility does not
-by itself grant additional reuse permissions.
+This project is licensed under the MIT License. See [LICENSE](./LICENSE).
